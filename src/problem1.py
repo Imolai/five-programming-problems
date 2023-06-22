@@ -1,22 +1,6 @@
 #!/usr/bin/env python
 """Write three functions that compute the sum of the numbers in a given list
-using a for-loop, a while-loop, and recursion.
-
-OUTPUT
-test_sum_comprehension (__main__.SumFunctionsTestCase)
-Test sum with list comprehension. ... ok
-test_sum_for (__main__.SumFunctionsTestCase)
-Test for-looper sum. ... ok
-test_sum_sum (__main__.SumFunctionsTestCase)
-Test recursive sum. ... ok
-test_sum_while (__main__.SumFunctionsTestCase)
-Test while-looper sum. ... ok
-
-----------------------------------------------------------------------
-Ran 4 tests in 0.000s
-
-OK
-"""
+using a for-loop, a while-loop, and recursion."""
 import unittest
 
 
@@ -44,10 +28,16 @@ def sum_sum(nums):
         return 0
     return nums[0] + sum_sum(nums[1:])
 
+
 def sum_comprehension(nums):
     """Compute the sum of the numbers in a given list using a list comprehension (additional)."""
     total = 0
     return [total := total + num for num in nums][-1]
+
+
+def sum_real(nums):
+    """Compute the sum of the numbers in the real life."""
+    return sum(nums)
 
 
 class SumFunctionsTestCase(unittest.TestCase):
@@ -72,6 +62,11 @@ class SumFunctionsTestCase(unittest.TestCase):
         """Test sum with list comprehension."""
         numbers = [1, 2, 3, 4, 5]
         self.assertEqual(sum_comprehension(numbers), 15)
+
+    def test_sum_real(self):
+        """Test real sum."""
+        numbers = [1, 2, 3, 4, 5]
+        self.assertEqual(sum_sum(numbers), 15)
 
 
 if __name__ == '__main__':

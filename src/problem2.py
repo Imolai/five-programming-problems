@@ -1,19 +1,7 @@
 #!/usr/bin/env python
 """Write a function that combines two lists by alternatingly taking
 elements. For example: given the two lists `[a, b, c]` and
-`[1, 2, 3]`, the function should return `[a, 1, b, 2, c, 3]`.
-
-OUTPUT
-test_combine_lists_basic (__main__.CombineFunctionsTestCase)
-Test basic combine. ... ok
-test_combine_lists_zip (__main__.CombineFunctionsTestCase)
-Test zipper combine. ... ok
-
-----------------------------------------------------------------------
-Ran 2 tests in 0.001s
-
-OK
-"""
+`[1, 2, 3]`, the function should return `[a, 1, b, 2, c, 3]`."""
 import unittest
 
 
@@ -57,13 +45,15 @@ class CombineFunctionsTestCase(unittest.TestCase):
         """Test basic combine."""
         list1 = ['a', 'b', 'c']
         list2 = [1, 2, 3]
-        self.assertEqual(combine_lists_basic(list1, list2), ['a', 1, 'b', 2, 'c', 3])
+        self.assertEqual(combine_lists_basic(
+            list1, list2), ['a', 1, 'b', 2, 'c', 3])
 
     def test_combine_lists_zip(self):
         """Test zipper combine."""
         list1 = ['a', 'b', 'c']
         list2 = [1, 2, 3]
-        self.assertEqual(combine_lists_zip(list1, list2), ['a', 1, 'b', 2, 'c', 3])
+        self.assertEqual(combine_lists_zip(list1, list2),
+                         ['a', 1, 'b', 2, 'c', 3])
 
 
 if __name__ == '__main__':

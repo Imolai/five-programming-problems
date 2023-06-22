@@ -33,9 +33,43 @@ Inspired by [Five programming problems every Software Engineer should be able to
 > arranges them such that they form the largest possible number. For
 > example, given [50, 2, 1, 9], the largest formed number is 95021.
 
+[problem4.py](src/problem4.py)
+
 ## Problem 5
 
 > Write a program that outputs all possibilities to put + or - or
 > nothing between the numbers 1, 2, ..., 9 (in this order) such that
 > the result is always 100. For example: 1 + 2 + 34 – 5 + 67 – 8 + 9 =
 > 100.
+
+[problem5.py](src/problem5.py)
+
+-----
+
+Additional problems
+-------------------
+
+## Problem 6
+
+> Write a program to determine if the parentheses (), the brackets [], and the braces {}, in
+> a string are balanced.  
+> For example:  
+> {{)(}} is not balanced because ) comes before (  
+> ({)} is not balanced because ) is not balanced between {} and similarly the { is not  
+> balanced between ()  
+> [({})] is balanced  
+> {}([]) is balanced  
+> {()}[[{}]] is balanced
+
+[problem6.py](src/problem6.py)
+
+## Problem 7
+
+> Write a program to generate all potential anagrams of an input string.  
+> For example, the potential anagrams of "biro" are  
+> biro bior brio broi boir bori  
+> ibro ibor irbo irob iobr iorb  
+> rbio rboi ribo riob roib robi  
+> obir obri oibr oirb orbi orib  
+
+[problem7.py](src/problem7.py)
