@@ -7,11 +7,15 @@ Inspired by [Five programming problems every Software Engineer should be able to
 > Write three functions that compute the sum of the numbers in a given
 > list using a for-loop, a while-loop, and recursion.
 
+[problem1.py](src/problem1.py)
+
 ## Problem 2
 
 > Write a function that combines two lists by alternatingly taking
 > elements. For example: given the two lists `[a, b, c]` and
 > `[1, 2, 3]`, the function should return `[a, 1, b, 2, c, 3]`.
+
+[problem2.py](src/problem2.py)
 
 ## Problem 3
 
@@ -20,6 +24,8 @@ Inspired by [Five programming problems every Software Engineer should be able to
 > sequence are 0 and 1, and each subsequent number is the sum of the
 > previous two. As an example, here are the first 10 Fibonnaci
 > numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, and 34.
+
+[problem3.py](src/problem3.py)
 
 ## Problem 4
 
