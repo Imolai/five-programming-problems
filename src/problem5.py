@@ -12,13 +12,19 @@ def find_expressions():
     1, 2, ..., 9 (in this order) such that the result is always 100."""
 
     results, numbers = [], range(1, 10)
-    # iterate on arrangements of operators
-    for perm in product(['+', '-', ''], repeat=8):
-        tuples = zip(numbers, perm + ('', ))  # add something for digit 9
-        # create expression as string
-        expression = ''.join([str(e1) + e2 for (e1, e2) in tuples])
+
+    # Iterate over arrangements of operators
+    for operator_permutation in product(['+', '-', ''], repeat=8):
+        # Add something for digit 9
+        number_operator_tuples = zip(numbers, operator_permutation + ('', ))
+
+        # Create expression as a string
+        expression = ''.join(
+            [str(number) + operator for (number, operator) in number_operator_tuples])
+
         if eval(expression) == 100:
             results.append(expression)
+
     return results
 
 
