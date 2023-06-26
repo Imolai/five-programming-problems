@@ -1,15 +1,26 @@
 # Five Programming Problems
 
-Inspired by [Five programming problems every Software Engineer should be able to solve in less than 1 hour](https://web.archive.org/web/20200414191515/http://www.shiftedup.com/2015/05/07/five-programming-problems-every-software-engineer-should-be-able-to-solve-in-less-than-1-hour). 
+Inspired by [Five programming problems every Software Engineer should be able to solve in less than 1 hour](https://web.archive.org/web/20200414191515/http://www.shiftedup.com/2015/05/07/five-programming-problems-every-software-engineer-should-be-able-to-solve-in-less-than-1-hour).
 
-## Problem 1
+- [Five Programming Problems](#five-programming-problems)
+  - [Problem 1 - sum](#problem-1---sum)
+  - [Problem 2 - combine lists](#problem-2---combine-lists)
+  - [Problem 3 - Fibonacci](#problem-3---fibonacci)
+  - [Problem 4 - largest positive number](#problem-4---largest-positive-number)
+  - [Problem 5 - result always 100](#problem-5---result-always-100)
+  - [Additional problems](#additional-problems)
+    - [Problem 6 - balanced parenthesis](#problem-6---balanced-parenthesis)
+    - [Problem 7 - anagrams](#problem-7---anagrams)
+    - [Problem 8 - validate number by Luhn](#problem-8---validate-number-by-luhn)
+
+## Problem 1 - sum
 
 > Write three functions that compute the sum of the numbers in a given
 > list using a for-loop, a while-loop, and recursion.
 
 [problem1.py](src/problem1.py)
 
-## Problem 2
+## Problem 2 - combine lists
 
 > Write a function that combines two lists by alternatingly taking
 > elements. For example: given the two lists `[a, b, c]` and
@@ -17,7 +28,7 @@ Inspired by [Five programming problems every Software Engineer should be able to
 
 [problem2.py](src/problem2.py)
 
-## Problem 3
+## Problem 3 - Fibonacci
 
 > Write a function that computes the list of the first 100 Fibonacci
 > numbers. By definition, the first two numbers in the Fibonacci
@@ -27,7 +38,7 @@ Inspired by [Five programming problems every Software Engineer should be able to
 
 [problem3.py](src/problem3.py)
 
-## Problem 4
+## Problem 4 - largest positive number
 
 > Write a function that given a list of non negative integers,
 > arranges them such that they form the largest possible number. For
@@ -35,7 +46,7 @@ Inspired by [Five programming problems every Software Engineer should be able to
 
 [problem4.py](src/problem4.py)
 
-## Problem 5
+## Problem 5 - result always 100
 
 > Write a program that outputs all possibilities to put + or - or
 > nothing between the numbers 1, 2, ..., 9 (in this order) such that
@@ -46,10 +57,9 @@ Inspired by [Five programming problems every Software Engineer should be able to
 
 -----
 
-Additional problems
--------------------
+## Additional problems
 
-## Problem 6
+### Problem 6 - balanced parenthesis
 
 > Write a program to determine if the parentheses (), the brackets [], and the braces {}, in
 > a string are balanced.  
@@ -63,7 +73,7 @@ Additional problems
 
 [problem6.py](src/problem6.py)
 
-## Problem 7
+### Problem 7 - anagrams
 
 > Write a program to generate all potential anagrams of an input string.  
 > For example, the potential anagrams of "biro" are  
@@ -74,7 +84,7 @@ Additional problems
 
 [problem7.py](src/problem7.py)
 
-## Problem 8
+### Problem 8 - validate number by Luhn
 
 ```text
 Validate credit card number by Luhn algorithm.
