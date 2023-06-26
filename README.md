@@ -73,3 +73,45 @@ Additional problems
 > obir obri oibr oirb orbi orib  
 
 [problem7.py](src/problem7.py)
+
+## Problem 8
+
+```text
+Validate credit card number by Luhn algorithm.
+
+0.) Given a Credit card number: 79927398713
+
+1.) Starting from the rightmost digit, double the value of every second digit:
+ 7    9    9    2    7    3    9    8    7    1    3
+      *2        *2        *2        *2        *2       
+============================
+      18.       4.        6.       16.        2
+
+
+2.) If doubling of a number results in a two digit number i.e greater than 9
+    (e.g., 6 × 2 = 12), then add the digits of the product (e.g.,
+    12: 1 + 2 = 3, 15: 1 + 5 = 6), to get a single digit number.)
+
+ 7    9    9    2    7    3    9    8    7    1    3
+      *2        *2        *2        *2        *2       
+ ============================
+     18.        4.        6.       16.        2
+ ============================
+      9.        4.        6.        7.        2
+
+
+3.) Now take the sum of all the digits.
+
+ 7    9    9    2    7    3    9    8    7    1    3
+      *2        *2        *2        *2        *2       
+ =============================
+     18.        4.        6.       16.        2
+ =============================
+      9.        4.        6.        7.        2
+ =============================
+ 7.    9.   9.   4.   7.   6.   9.   7.    7.   2.   3.     =.    70
+
+4.) If the total modulo 10 is equal to 0 (if the total ends in zero) then the number is valid according to the Luhn formula; else it is not valid.
+```
+
+[problem8.py](src/problem8.py)
